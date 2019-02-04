@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.createRoot(document.getElementById('suspense')).render(<App />);
+import App from './App';
+import * as serviceWorker from './services/serviceWorker';
+import './styles/reset.css';
+
+ReactDOM.createRoot(document.getElementById('suspense-app')).render(<App />);
 serviceWorker.register();
