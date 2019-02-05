@@ -6,7 +6,8 @@ import styles from './styles/App.module.css';
 export default function App() {
   return (
     <div className={styles.test}>
-      <Emoji symbol="🔥" />
+      <Emoji emoji="🔥" label="fire" />
+      <Emoji emoji="😍" label="heart_eyes" />
     </div>
   );
 }
