@@ -5,5 +5,5 @@ import App from './App';
 import * as serviceWorker from './services/serviceWorker';
 import './styles/reset.css';
 
-ReactDOM.createRoot(document.getElementById('suspense-app')).render(<App />);
+ReactDOM.render(<App />, document.getElementById('suspense-app'));
 serviceWorker.register();
