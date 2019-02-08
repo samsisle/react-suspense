@@ -1,1 +1,1 @@
-export const toUTF16 = hex => String.fromCodePoint(dparseInt(hex, 16));
+export const hexToEmoji = hex => String.fromCodePoint(parseInt(hex, 16));
