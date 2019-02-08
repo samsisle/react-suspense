@@ -15,7 +15,7 @@ export default function Emoji({ label, emoji, emojiHex }) {
         aria-label={label ? label : ""}
         aria-hidden={label ? "false" : "true"}
       >
-        <img src={images} alt={label} />
+        <img src={images} width="70px" alt={label} />
       </span>
     </CTP>
   );
