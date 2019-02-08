@@ -6,7 +6,6 @@ import style from "./emoji.module.css";
 export default function Emoji({ label, emoji, emojiHex }) {
   const onCopy = () => alert("Copied!");
   const images = require("../../assets/svgs/" + emojiHex + ".svg");
-  console.log(images);
   return (
     <CTP text={emoji} onCopy={onCopy}>
       <span
