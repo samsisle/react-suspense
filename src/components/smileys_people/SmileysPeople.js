@@ -3,7 +3,7 @@ import React from "react";
 import Emoji from "../emoji/Emoji";
 import { hexToEmoji } from "../../services/hexToEmoji";
 import { peopleFaces } from "../../__data__/peopleFaces";
-import styles from "./smileysPeople.module.css";
+import styles from "../../styles/container.module.css";
 
 export default function SmileysPeople() {
   return (
