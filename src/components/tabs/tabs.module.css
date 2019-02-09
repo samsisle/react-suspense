@@ -1,5 +1,11 @@
 .container {
     margin: 0 auto 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.outer {
+    width: 100%;
 }
 
 
