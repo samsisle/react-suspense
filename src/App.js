@@ -18,12 +18,12 @@ export default function App() {
       <Banner />
       <SearchBar />
       <SmileysPeople />
-      {/* <Activity />
+      <Activity />
       <AnimalsNature />
       <FoodDrink />
       <Objects />
       <Symbols />
-      <TravelPlaces /> */}
+      <TravelPlaces />
     </div>
   );
 }
