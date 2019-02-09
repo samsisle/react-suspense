@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+}
+
+.input {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #eee;
+    background: #eee;
+    border-radius: 30px;
+    transition: 150ms border ease-in-out,
+        150ms background ease-in-out;
+}
+
+.input:focus {
+    caret-color: #5BA8E8;
+    outline: none;
+    background: white;
+    border: 2px solid #5BA8E8;
+}
+
+.inputBox {
+    margin: auto;
+    width: 45%;
+    position: relative;
+}
+
+/* .inputBox::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -1.5rem;
+    right: 100%;
+    width: 3rem;
+    content: "";
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.inputBox::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: -1.5rem;
+    width: 3rem;
+    content: "";
+    border: 1px solid black;
+    border-radius: 50%;
+} */

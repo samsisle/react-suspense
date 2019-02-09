@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './App';
-import * as serviceWorker from './services/serviceWorker';
-import './styles/reset.css';
+import App from "./App";
+import * as serviceWorker from "./services/serviceWorker";
+import "typeface-poppins";
+import "typeface-montserrat";
+import "./styles/reset.css";
 
-ReactDOM.render(<App />, document.getElementById('suspense-app'));
+ReactDOM.render(<App />, document.getElementById("suspense-app"));
 serviceWorker.register();

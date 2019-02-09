@@ -1,0 +1,23 @@
+.banner {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 500;
+    color: white;
+    /* height: 50vh; */
+    width: 100%;
+    padding: 1rem 3.5rem;
+    background: #5BA8E8;
+}
+
+.title {
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+}
+
+.titleEmoji {
+    position: relative;
+    top: 3px;
+    margin: 0 2px;
+    width: 1.75rem;
+}
