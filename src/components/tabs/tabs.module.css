@@ -14,9 +14,7 @@
     font-size: 2rem;
     border-bottom: 3px solid white;
     filter: grayscale(100);
-    transition: 100ms background ease-in-out,
-        100ms border-bottom ease-in-out,
-        200ms filter ease-in-out;
+    transition: 200ms filter ease-in-out;
 }
 
 .tab:hover {
