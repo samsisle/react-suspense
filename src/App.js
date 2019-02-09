@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
 import SearchBar from "./components/searchBar/SearchBar";
@@ -26,7 +26,12 @@ export default function App() {
       <Banner />
       <SearchBar />
       <Suspense fallback={<div>Loading...</div>}>
-        <Route exact path="/" component={SmileysPeople} />
+        <Route
+          exact
+          path="/"
+          render={() => <Redirect to="/smileys_people" />}
+        />
+        <Route path="/smileys_people" component={SmileysPeople} />
         <Route path="/activity" component={Activity} />
         <Route path="/animals_nature" component={AnimalsNature} />
         <Route path="/food_drink" component={FoodDrink} />
