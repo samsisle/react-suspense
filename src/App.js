@@ -3,6 +3,7 @@ import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
 import SearchBar from "./components/searchBar/SearchBar";
+import Tabs from "./components/tabs/Tabs";
 import styles from "./styles/App.module.css";
 
 /* prettier-ignore */
@@ -25,6 +26,7 @@ export default function App() {
     <div className={styles.test}>
       <Banner />
       <SearchBar />
+      <Tabs />
       <Suspense fallback={<div>Loading...</div>}>
         <Route
           exact
