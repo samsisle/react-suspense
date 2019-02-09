@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 import * as serviceWorker from "./services/serviceWorker";
-import "typeface-poppins";
 import "typeface-montserrat";
 import "./styles/reset.css";
 
