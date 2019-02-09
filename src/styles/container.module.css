@@ -4,7 +4,6 @@
     width: 100%;
     grid-template-columns: repeat(auto-fill, 100px);
     grid-auto-flow: row;
-    grid-gap: 1rem;
     align-items: center;
     justify-content: center;
 }
