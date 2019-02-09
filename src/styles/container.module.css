@@ -1,9 +1,24 @@
 .container {
-    padding: 1rem;
+    padding: 1rem 0;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, 100px);
+    max-width: 900px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, 80px);
     grid-auto-flow: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:1125px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, 80px);
+        margin: 0 10%;
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        /* padding: 1rem 10%; */
+    }
 }

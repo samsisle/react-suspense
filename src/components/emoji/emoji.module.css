@@ -11,3 +11,13 @@
 .emoji:hover {
     background: #5BA8E8;
 }
+
+.emojiImage {
+    width: 50px;
+}
+
+@media (max-width:1300px) {
+    .emojiImage {
+        width: 50px;
+    }
+}
