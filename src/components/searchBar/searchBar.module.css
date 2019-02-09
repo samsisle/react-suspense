@@ -26,6 +26,8 @@
 .inputBox {
     margin: auto;
     width: 45%;
+    max-width: 500px;
+    min-width: 300px;
     position: relative;
 }
 
