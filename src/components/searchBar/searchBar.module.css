@@ -10,6 +10,7 @@
     font-size: 1.1rem;
     border: 2px solid #eee;
     background: #eee;
+    color: rgb(39, 52, 59);
     border-radius: 30px;
     transition: 150ms border ease-in-out,
         150ms background ease-in-out;
