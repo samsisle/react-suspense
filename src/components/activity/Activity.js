@@ -7,17 +7,20 @@ import styles from "../../styles/container.module.css";
 
 export default function Activity() {
   return (
-    <section className={styles.container}>
-      {activitySports.map(emoji => {
-        return (
-          <Emoji
-            key={emoji.unicode}
-            label={emoji.label}
-            emojiHex={emoji.unicode}
-            emoji={hexToEmoji(emoji.unicode)}
-          />
-        );
-      })}
-    </section>
+    <div className={styles.nameContainer}>
+      <h2 className={styles.emojiType}>Activity</h2>
+      <section className={styles.container}>
+        {activitySports.map(emoji => {
+          return (
+            <Emoji
+              key={emoji.unicode}
+              label={emoji.label}
+              emojiHex={emoji.unicode}
+              emoji={hexToEmoji(emoji.unicode)}
+            />
+          );
+        })}
+      </section>
+    </div>
   );
 }
