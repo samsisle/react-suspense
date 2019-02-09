@@ -1,5 +1,29 @@
-.emojiType {
-    display: block;
-    width: 100%;
+.container {
+    margin: 0 auto 2.5rem;
+}
+
+
+.tab {
+    padding: 1rem;
     font-size: 2rem;
+    border-bottom: 3px solid white;
+    filter: grayscale(100);
+    transition: 100ms background ease-in-out,
+        100ms border-bottom ease-in-out,
+        200ms filter ease-in-out;
+}
+
+.tab:hover {
+    filter: grayscale(0);
+    border-bottom: 3px solid #E6F5FD;
+    background: #E6F5FD;
+}
+
+.active {
+    filter: grayscale(0);
+    border-bottom: 3px solid #5BA8E8;
+}
+
+.active:hover {
+    border-bottom: 3px solid #5BA8E8;
 }

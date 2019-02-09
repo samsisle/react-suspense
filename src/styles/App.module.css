@@ -5,3 +5,9 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+.loading {
+	height: 150vh;
+	width: 100%;
+	text-align: center;
+}
