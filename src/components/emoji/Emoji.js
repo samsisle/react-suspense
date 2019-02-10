@@ -3,15 +3,9 @@ import { CopyToClipboard as CTP } from "react-copy-to-clipboard";
 
 import style from "./emoji.module.css";
 
-export default function Emoji({
-  label,
-  emoji,
-  emojiHex
-}) {
+export default function Emoji({ label, emoji, emojiHex }) {
   const onCopy = () => alert("Copied!");
-  const images = require("../../assets/svgs/" +
-    emojiHex +
-    ".svg");
+  const images = require("../../assets/svgs/" + emojiHex + ".svg");
   return (
     <CTP text={emoji} onCopy={onCopy}>
       <span
@@ -20,11 +14,7 @@ export default function Emoji({
         aria-label={label ? label : ""}
         aria-hidden={label ? "false" : "true"}
       >
-        <img
-          className={style.emojiImage}
-          src={images}
-          alt={label}
-        />
+        <img className={style.emojiImage} src={images} alt={label} />
       </span>
     </CTP>
   );
