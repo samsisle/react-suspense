@@ -27,7 +27,7 @@ export default function App() {
       <Banner />
       <SearchBar />
       <Tabs />
-      <Suspense fallback={<div className={styles.loading}>Loading...</div>}>
+      <Suspense fallback={<div className={styles.loading}>Loading Emojis...</div>}>
         <Route
           exact
           path="/"
