@@ -6,7 +6,7 @@ const images = require("../../assets/svgs/" +
   "1f351" +
   ".svg");
 
-const Banner = _ => {
+export default function Banner() {
   return (
     <div className={styles.banner}>
       <h1 className={styles.title}>
@@ -22,5 +22,3 @@ const Banner = _ => {
     </div>
   );
 };
-
-export default Banner;
