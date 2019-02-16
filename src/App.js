@@ -4,6 +4,7 @@ import { Route, Redirect } from "react-router-dom";
 import Banner from "./components/banner/Banner";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
+import Footer from "./components/footer/Footer";
 import styles from "./styles/App.module.css";
 
 /* prettier-ignore */
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/symbols" component={Symbols} />
         <Route path="/travel_places" component={TravelPlaces} />
       </Suspense>
+      <Footer />
     </div>
   );
 }
