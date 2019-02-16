@@ -18,15 +18,17 @@
 
 .tab:hover {
     filter: grayscale(0);
-    border-bottom: 3px solid #E6F5FD;
-    background: #E6F5FD;
+    border-bottom: 3px solid #ebe5ff;
+    ;
+    background: #ebe5ff;
+    ;
 }
 
 .active {
     filter: grayscale(0);
-    border-bottom: 3px solid #5BA8E8;
+    border-bottom: 3px solid #7d5cff;
 }
 
 .active:hover {
-    border-bottom: 3px solid #5BA8E8;
+    border-bottom: 3px solid #7d5cff;
 }

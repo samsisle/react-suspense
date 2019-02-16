@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./tabs.module.css";
 
+const images = require("../../assets/svgs/" + "1f351" + ".svg");
+
 export default function Tabs() {
   return (
     <div className={styles.outer}>
