@@ -1,24 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./banner.module.css";
 
-const images = require("../../assets/svgs/" +
-  "1f351" +
-  ".svg");
+const emojis = [
+  "1f61c",
+  "1f602",
+  "1f4a9",
+  "1f608",
+  "1f47d",
+  "1f60d",
+  "1f31a",
+  "1f525",
+  "1f351",
+  "1f345",
+  "1f36a",
+  "1f369",
+  "1f3c0",
+  "1f52e",
+  "1f4a3",
+  "1f497"
+];
+
+const random = array => {
+  return Math.floor(Math.random() * array.length);
+};
 
 export default function Banner() {
+  const [index, setIndex] = useState(0);
+  const image = require("../../assets/svgs/" + emojis[index] + ".svg");
+  const handleIndex = _ => {
+    setIndex(random(emojis));
+  };
   return (
     <div className={styles.banner}>
       <h1 className={styles.title}>
         em
         <img
           className={styles.titleEmoji}
-          src={images}
-          alt="peach"
+          src={image}
+          // alt="peach"
+          onMouseOver={handleIndex}
         />
         ji
       </h1>
       <p />
     </div>
   );
-};
+}
