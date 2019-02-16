@@ -13,4 +13,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById("suspense-app")
 );
-serviceWorker.register();
+serviceWorker.unregister();
