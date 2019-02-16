@@ -20,9 +20,7 @@
 .tab:hover {
     filter: grayscale(0);
     border-bottom: 3px solid #ebe5ff;
-    ;
     background: #ebe5ff;
-    ;
 }
 
 .tab-img {
