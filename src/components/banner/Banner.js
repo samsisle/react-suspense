@@ -1,60 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
+import titleEmojis from "../../__data__/titleEmojis";
+import uniqueRNG from "../../services/uniqueRNG";
 import useInterval from "../../services/useInterval";
 import styles from "./banner.module.css";
 
-const emojis = [
-  "1f61c",
-  "1f602",
-  "1f607",
-  "1f60b",
-  "1f4a9",
-  "1f624",
-  "1f608",
-  "1f47d",
-  "1f60d",
-  "1f31a",
-  "1f525",
-  "1f351",
-  "1f345",
-  "1f36a",
-  "1f369",
-  "1f3c0",
-  "1f52e",
-  "1f4a3",
-  "1f497"
-];
-
-const random = array => {
-  return Math.floor(Math.random() * array.length);
-};
-
 export default function Banner() {
-  const [index, setIndex] = useState(random(emojis));
-  const image = require("../../assets/svgs/" + emojis[index] + ".svg");
-  const checkRandom = array => {
-    let randomNum = random(emojis);
-    console.log(randomNum);
-    // if (index === randomNum) {
-    //   random(emojis);
-    // } else return randomNum;
-    return randomNum;
-  };
+  const [array] = useState(titleEmojis);
+  const [index, setIndex] = useState(uniqueRNG(array.length - 1, 0, null));
+  const image = require("../../assets/svgs/" + array[index].unicode + ".svg");
   const handleIndex = _ => {
-    setIndex(checkRandom(emojis));
+    setIndex(uniqueRNG(array.length - 1, 0, index));
   };
-  // useEffect(
-  //   _ => {
-  useInterval(
-    _ => {
-      handleIndex(index);
-    },
-    1000,
-    index
-  );
-  //   },
-  //   [index]
-  // );
+  useInterval(_ => {
+    handleIndex(index);
+  }, 5000);
   return (
     <div className={styles.banner}>
       <h1 className={styles.title}>
@@ -62,8 +22,7 @@ export default function Banner() {
         <img
           className={styles.titleEmoji}
           src={image}
-          // alt="peach"
-          onMouseOver={handleIndex}
+          alt={array[index].alt}
           onClick={handleIndex}
         />
         ji
