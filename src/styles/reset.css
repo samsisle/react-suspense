@@ -155,3 +155,27 @@ body {
 a {
   text-decoration: none;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e4e4e4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #696969;
+}
+
+::selection {
+  background: #b6a0ff;
+}
