@@ -11,8 +11,6 @@
 .tab {
     padding: 1rem;
     width: 70px;
-    /* font-size: 2rem; */
-    /* display: flex; */
     border-bottom: 3px solid white;
     filter: grayscale(100);
     transition: 200ms filter ease-in-out;

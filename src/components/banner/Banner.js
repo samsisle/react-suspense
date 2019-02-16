@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+import useInterval from "../../services/useInterval";
 import styles from "./banner.module.css";
 
 const emojis = [
   "1f61c",
   "1f602",
+  "1f607",
+  "1f60b",
   "1f4a9",
+  "1f624",
   "1f608",
   "1f47d",
   "1f60d",
@@ -26,11 +30,31 @@ const random = array => {
 };
 
 export default function Banner() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(random(emojis));
   const image = require("../../assets/svgs/" + emojis[index] + ".svg");
-  const handleIndex = _ => {
-    setIndex(random(emojis));
+  const checkRandom = array => {
+    let randomNum = random(emojis);
+    console.log(randomNum);
+    // if (index === randomNum) {
+    //   random(emojis);
+    // } else return randomNum;
+    return randomNum;
   };
+  const handleIndex = _ => {
+    setIndex(checkRandom(emojis));
+  };
+  // useEffect(
+  //   _ => {
+  useInterval(
+    _ => {
+      handleIndex(index);
+    },
+    1000,
+    index
+  );
+  //   },
+  //   [index]
+  // );
   return (
     <div className={styles.banner}>
       <h1 className={styles.title}>

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./searchBar.module.css";
 
-const images = require("../../assets/svgs/" + "1f50d" + ".svg");
+const images = require("../../assets/svgs/1f50d.svg");
 
 export default function SearchBar() {
   return (

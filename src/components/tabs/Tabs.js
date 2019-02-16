@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 import styles from "./tabs.module.css";
 
 const images = [
-  require("../../assets/svgs/" + "1f600" + ".svg"),
-  require("../../assets/svgs/" + "1f43b" + ".svg"),
-  require("../../assets/svgs/" + "1f354" + ".svg"),
-  require("../../assets/svgs/" + "26bd" + ".svg"),
-  require("../../assets/svgs/" + "1f698" + ".svg"),
-  require("../../assets/svgs/" + "1f4a1" + ".svg"),
-  require("../../assets/svgs/" + "1f523" + ".svg")
+  require("../../assets/svgs/1f600.svg"),
+  require("../../assets/svgs/1f43b.svg"),
+  require("../../assets/svgs/1f354.svg"),
+  require("../../assets/svgs/26bd.svg"),
+  require("../../assets/svgs/1f698.svg"),
+  require("../../assets/svgs/1f4a1.svg"),
+  require("../../assets/svgs/1f523.svg")
 ];
 
 const tabs = [
@@ -30,6 +30,7 @@ export default function Tabs() {
         {tabs.map((tab, i) => {
           return (
             <NavLink
+              key={tab.alt + i}
               activeClassName={styles.active}
               className={styles.tab}
               to={tab.route}
