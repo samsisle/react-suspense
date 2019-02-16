@@ -40,6 +40,7 @@ export default function Banner() {
           src={image}
           // alt="peach"
           onMouseOver={handleIndex}
+          onClick={handleIndex}
         />
         ji
       </h1>
