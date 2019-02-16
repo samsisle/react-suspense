@@ -33,5 +33,6 @@
 }
 
 .active:hover {
+    opacity: 1;
     border-bottom: 3px solid #7d5cff;
 }
