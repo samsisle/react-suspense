@@ -36,3 +36,13 @@
     opacity: 1;
     border-bottom: 3px solid #7d5cff;
 }
+
+@media (max-width: 488px) {
+    .container {
+        padding: 0 0.35rem;
+    }
+
+    .tab {
+        padding: 0.4rem;
+    }
+}
