@@ -11,6 +11,7 @@ const Footer = _ => {
         className={styles.link}
         href="https://github.com/samsisle/react-suspense"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img className={styles.icons} src={GitHub} alt="github" />
       </a>
