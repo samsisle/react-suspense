@@ -27,7 +27,15 @@ export default function Banner() {
         />
         ji
       </h1>
-      <p />
+      <div className={styles.share}>
+        <a
+          href="https://twitter.com/intent/tweet?text=feeling%20cozy%20and%20Emoji%20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Share on Twitter
+        </a>
+      </div>
     </div>
   );
 }
