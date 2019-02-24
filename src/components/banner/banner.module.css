@@ -1,13 +1,13 @@
 .banner {
+    display: flex;
     font-weight: 500;
     color: white;
     width: 100%;
-    padding: 1rem 3.5rem;
+    padding: 1rem 5%;
     background: #7d5cff;
 }
 
 .title {
-    display: inline-block;
     cursor: pointer;
     user-select: none;
     font-size: 2rem;
