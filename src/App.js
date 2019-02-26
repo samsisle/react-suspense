@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Redirect } from "react-router-dom";
 
+import Bruh from "./Bruh";
 import Banner from "./components/banner/Banner";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
@@ -31,18 +32,20 @@ export default function App() {
       <Suspense
         fallback={<div className={styles.loading}>Loading Emojis...</div>}
       >
-        <Route
-          exact
-          path="/"
-          render={() => <Redirect to="/smileys_people" />}
-        />
-        <Route path="/smileys_people" component={SmileysPeople} />
-        <Route path="/activity" component={Activity} />
-        <Route path="/animals_nature" component={AnimalsNature} />
-        <Route path="/food_drink" component={FoodDrink} />
-        <Route path="/objects" component={Objects} />
-        <Route path="/symbols" component={Symbols} />
-        <Route path="/travel_places" component={TravelPlaces} />
+        <Bruh.Provider value={_ => alert("Copied!")}>
+          <Route
+            exact
+            path="/"
+            render={() => <Redirect to="/smileys_people" />}
+          />
+          <Route path="/smileys_people" component={SmileysPeople} />
+          <Route path="/activity" component={Activity} />
+          <Route path="/animals_nature" component={AnimalsNature} />
+          <Route path="/food_drink" component={FoodDrink} />
+          <Route path="/objects" component={Objects} />
+          <Route path="/symbols" component={Symbols} />
+          <Route path="/travel_places" component={TravelPlaces} />
+        </Bruh.Provider>
       </Suspense>
       <Footer />
     </div>
