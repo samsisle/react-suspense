@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Redirect } from "react-router-dom";
 
-import Bruh from "./Bruh";
 import Banner from "./components/banner/Banner";
+import { Portal, Modal, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
 import Footer from "./components/footer/Footer";
@@ -27,12 +27,15 @@ export default function App() {
   return (
     <div className={styles.test}>
       <Banner />
+      <Portal>
+        <Modal />
+      </Portal>
       <SearchBar />
       <Tabs />
       <Suspense
         fallback={<div className={styles.loading}>Loading Emojis...</div>}
       >
-        <Bruh.Provider value={_ => alert("Copied!")}>
+        <Context.Provider value={_ => alert("Copied!")}>
           <Route
             exact
             path="/"
@@ -45,7 +48,7 @@ export default function App() {
           <Route path="/objects" component={Objects} />
           <Route path="/symbols" component={Symbols} />
           <Route path="/travel_places" component={TravelPlaces} />
-        </Bruh.Provider>
+        </Context.Provider>
       </Suspense>
       <Footer />
     </div>

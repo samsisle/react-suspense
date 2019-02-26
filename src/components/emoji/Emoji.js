@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import { CopyToClipboard as CTP } from "react-copy-to-clipboard";
 
-import Bruh from "../../Bruh";
-import Portal from "../modal/portal";
+import Context from "../modal/Context";
 import style from "./emoji.module.css";
 
 export default function Emoji({ label, emoji, emojiHex }) {
-  const value = useContext(Bruh);
+  const value = useContext(Context);
   const onCopy = _ => value();
   const images = require("../../assets/svgs/" + emojiHex + ".svg");
   return (
