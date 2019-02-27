@@ -2,15 +2,13 @@ import React, { Fragment } from "react";
 
 import Modal from "./Modal";
 
-const ModalStack = props => {
+export default function ModalStack({ emojis }) {
   return (
     <Fragment>
-      {props.emojis &&
-        props.emojis.map(emojis => (
-          <Modal emoji={emojis.emoji} label={emojis.label} />
+      {emojis &&
+        emojis.map(emoji => (
+          <Modal emoji={emoji.emoji} label={emoji.label} />
         ))}
     </Fragment>
   );
-};
-
-export default ModalStack;
+}
