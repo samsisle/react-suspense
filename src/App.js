@@ -1,29 +1,23 @@
-import React, { lazy, Suspense } from "react";
+import React, { Component, Suspense } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
 import { Portal, ModalStack, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
+import {
+  SmileysPeople,
+  Activity,
+  AnimalsNature,
+  FoodDrink,
+  Objects,
+  Symbols,
+  TravelPlaces
+} from "./services/lazyImports";
 import Footer from "./components/footer/Footer";
 import styles from "./styles/App.module.css";
 
-/* prettier-ignore */
-const SmileysPeople = lazy(() => import("./components/smileys_people/SmileysPeople"));
-/* prettier-ignore */
-const Activity = lazy(() => import("./components/activity/Activity"));
-/* prettier-ignore */
-const AnimalsNature = lazy(() => import("./components/animals_nature/AnimalsNature"));
-/* prettier-ignore */
-const FoodDrink = lazy(() => import("./components/food_drink/FoodDrink"));
-/* prettier-ignore */
-const Objects = lazy(() => import("./components/objects/Objects"))
-/* prettier-ignore */
-const Symbols = lazy(() => import("./components/symbols/Symbols"))
-/* prettier-ignore */
-const TravelPlaces = lazy(() => import("./components/travel_places/TravelPlaces"))
-
-export default class App extends React.Component {
+export default class App extends Component {
   state = { test: [] };
 
   copyModal = (emoji, label) => {
