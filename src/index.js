@@ -11,6 +11,6 @@ ReactDOM.render(
   <Router>
     <App />
   </Router>,
-  document.getElementById("suspense-app")
+  document.getElementById("twemoji")
 );
 serviceWorker.unregister();
