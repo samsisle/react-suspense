@@ -32,6 +32,8 @@ export default class App extends React.Component {
     this.setState({ test: newTest });
   };
 
+  redirect = () => <Redirect to="/smileys_people" />;
+
   render() {
     return (
       <div className={styles.test}>
@@ -45,11 +47,7 @@ export default class App extends React.Component {
           fallback={<div className={styles.loading}>Loading Emojis...</div>}
         >
           <Context.Provider value={this.copyModal}>
-            <Route
-              exact
-              path="/"
-              render={() => <Redirect to="/smileys_people" />}
-            />
+            <Route exact path="/" render={this.redirect} />
             <Route path="/smileys_people" component={SmileysPeople} />
             <Route path="/activity" component={Activity} />
             <Route path="/animals_nature" component={AnimalsNature} />
