@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Modal from "./Modal.js";
+import Modal from "./Modal";
 
 const ModalStack = props => {
   return (
-    <div>
+    <Fragment>
       {props.emojis &&
         props.emojis.map(emojis => (
           <Modal emoji={emojis.emoji} label={emojis.label} />
         ))}
-    </div>
+    </Fragment>
   );
 };
 
