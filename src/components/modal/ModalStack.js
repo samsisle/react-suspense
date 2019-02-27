@@ -7,7 +7,7 @@ export default function ModalStack({ emojis }) {
     <Fragment>
       {emojis &&
         emojis.map(emoji => (
-          <Modal emoji={emoji.emoji} label={emoji.label} />
+          <Modal key={emoji.label} emoji={emoji.emoji} label={emoji.label} />
         ))}
     </Fragment>
   );
