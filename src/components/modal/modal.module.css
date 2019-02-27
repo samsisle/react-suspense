@@ -8,15 +8,20 @@
     padding: 1rem;
     border-radius: 7px;
     border: 1px solid #7d5cff;
-    background: #b6a0ff;
+    background: rgba(182, 160, 255, 0.85);
+    font-size: 1rem;
     user-select: none;
     animation: slide-in-elliptic-top-fwd 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.container span {
+    line-height: normal;
+}
+
 .emojiImage {
-    margin: 0 0 0 1rem;
+    margin-right: 1rem;
     width: 100%;
-    max-width: 2.5rem;
+    max-width: 1.5rem;
     object-fit: contain;
 }
 
