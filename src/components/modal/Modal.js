@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Modal() {
+import styles from "./modal.module.css";
+
+export default function Modal({ emoji, label }) {
   return (
-    <div>
-      bruh
+    <div className={styles.container}>
+      <span>copied: </span>
+      <img className={styles.emojiImage} src={emoji} alt={label} />
     </div>
-  )
+  );
 }

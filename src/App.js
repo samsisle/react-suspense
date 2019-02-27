@@ -1,8 +1,8 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
-import { Portal, Modal, Context } from "./components/modal";
+import { Portal, ModalStack, Context, ModalContext } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
 import Footer from "./components/footer/Footer";
@@ -23,34 +23,43 @@ const Symbols = lazy(() => import("./components/symbols/Symbols"))
 /* prettier-ignore */
 const TravelPlaces = lazy(() => import("./components/travel_places/TravelPlaces"))
 
-export default function App() {
-  return (
-    <div className={styles.test}>
-      <Banner />
-      <Portal>
-        <Modal />
-      </Portal>
-      <SearchBar />
-      <Tabs />
-      <Suspense
-        fallback={<div className={styles.loading}>Loading Emojis...</div>}
-      >
-        <Context.Provider value={_ => alert("Copied!")}>
-          <Route
-            exact
-            path="/"
-            render={() => <Redirect to="/smileys_people" />}
-          />
-          <Route path="/smileys_people" component={SmileysPeople} />
-          <Route path="/activity" component={Activity} />
-          <Route path="/animals_nature" component={AnimalsNature} />
-          <Route path="/food_drink" component={FoodDrink} />
-          <Route path="/objects" component={Objects} />
-          <Route path="/symbols" component={Symbols} />
-          <Route path="/travel_places" component={TravelPlaces} />
-        </Context.Provider>
-      </Suspense>
-      <Footer />
-    </div>
-  );
+export default class App extends React.Component {
+  state = { test: [] };
+
+  copyModal = (emoji, label) => {
+    const newTest = this.state.test;
+    newTest.push({ emoji, label });
+    this.setState({ test: newTest });
+  };
+  render() {
+    return (
+      <div className={styles.test}>
+        <Banner />
+        <Portal>
+          <ModalStack emojis={this.state.test} />
+        </Portal>
+        <SearchBar />
+        <Tabs />
+        <Suspense
+          fallback={<div className={styles.loading}>Loading Emojis...</div>}
+        >
+          <Context.Provider value={this.copyModal}>
+            <Route
+              exact
+              path="/"
+              render={() => <Redirect to="/smileys_people" />}
+            />
+            <Route path="/smileys_people" component={SmileysPeople} />
+            <Route path="/activity" component={Activity} />
+            <Route path="/animals_nature" component={AnimalsNature} />
+            <Route path="/food_drink" component={FoodDrink} />
+            <Route path="/objects" component={Objects} />
+            <Route path="/symbols" component={Symbols} />
+            <Route path="/travel_places" component={TravelPlaces} />
+          </Context.Provider>
+        </Suspense>
+        <Footer />
+      </div>
+    );
+  }
 }
