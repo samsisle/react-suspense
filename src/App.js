@@ -1,8 +1,8 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
-import { Portal, ModalStack, Context, ModalContext } from "./components/modal";
+import { Portal, ModalStack, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
 import Footer from "./components/footer/Footer";
@@ -31,6 +31,7 @@ export default class App extends React.Component {
     newTest.push({ emoji, label });
     this.setState({ test: newTest });
   };
+
   render() {
     return (
       <div className={styles.test}>
