@@ -2,7 +2,8 @@ import React, { Component, Suspense } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
-import { Portal, ModalStack, Context } from "./components/modal";
+import Expire from "./components/expire/Expire";
+import { Portal, Modal, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
 import {
@@ -18,12 +19,10 @@ import Footer from "./components/footer/Footer";
 import styles from "./styles/App.module.css";
 
 export default class App extends Component {
-  state = { test: [] };
+  state = { test: null };
 
   copyModal = (emoji, label) => {
-    const newTest = this.state.test;
-    newTest.push({ emoji, label });
-    this.setState({ test: newTest });
+    this.setState({ test: { emoji, label } });
   };
 
   redirect = () => <Redirect to="/smileys_people" />;
@@ -33,7 +32,11 @@ export default class App extends Component {
       <div className={styles.test}>
         <Banner />
         <Portal>
-          <ModalStack emojis={this.state.test} />
+          {this.state.test && (
+            <Expire delay={2000}>
+              <Modal emoji={this.state.test} />
+            </Expire>
+          )}
         </Portal>
         <SearchBar />
         <Tabs />

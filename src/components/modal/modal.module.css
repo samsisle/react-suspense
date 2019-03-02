@@ -7,12 +7,10 @@
   right: 1rem;
   padding: 1rem;
   border-radius: 7px;
-  border: 1px solid #7d5cff;
-  background: rgba(182, 160, 255, 0.85);
+  /* border: 1px solid #7d5cff; */
+  background: rgba(182, 160, 255, 0.9);
   font-size: 1rem;
   user-select: none;
-  animation: slide-in-elliptic-top-fwd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
 }
 
 .container span {
@@ -24,22 +22,4 @@
   width: 100%;
   max-width: 1.5rem;
   object-fit: contain;
-}
-
-@keyframes slide-in-elliptic-top-fwd {
-  0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-    transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-    transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 900px;
-    transform-origin: 50% 900px;
-    opacity: 1;
-  }
 }

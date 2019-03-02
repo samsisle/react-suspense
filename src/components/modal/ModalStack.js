@@ -1,14 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
+import shortid from "shortid";
 
 import Modal from "./Modal";
+import Expire from "../expire/Expire";
 
-export default function ModalStack({ emojis }) {
+export default function ModalStack({ emoji }) {
   return (
-    <Fragment>
-      {emojis &&
-        emojis.map(emoji => (
-          <Modal key={emoji.label} emoji={emoji.emoji} label={emoji.label} />
-        ))}
-    </Fragment>
+    <>
+      <Expire key={shortid.generate()} delay={2000}>
+        <Modal emoji={emoji.emoji} label={emoji.label} />
+      </Expire>
+    </>
   );
 }
