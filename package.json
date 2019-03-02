@@ -9,6 +9,7 @@
     "react-fuzzy": "^0.5.2",
     "react-router-dom": "^4.4.0-beta.6",
     "react-scripts": "^2.1.5",
+    "react-spring": "^8.0.9",
     "typeface-montserrat": "^0.0.54"
   },
   "scripts": {
