@@ -1,13 +1,14 @@
 .container {
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   position: fixed;
   top: 1rem;
   right: 1rem;
   padding: 1rem;
   border-radius: 7px;
-  /* border: 1px solid #7d5cff; */
   background: rgba(182, 160, 255, 0.9);
   font-size: 1rem;
   user-select: none;
@@ -22,4 +23,12 @@
   width: 100%;
   max-width: 1.5rem;
   object-fit: contain;
+}
+
+@media (max-width: 330px) {
+  .container {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
