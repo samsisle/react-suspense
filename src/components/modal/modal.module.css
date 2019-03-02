@@ -1,7 +1,9 @@
 .container {
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -21,4 +23,12 @@
   width: 100%;
   max-width: 1.5rem;
   object-fit: contain;
+}
+
+@media (max-width: 330px) {
+  .container {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
