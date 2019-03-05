@@ -7,17 +7,15 @@ export default class Expire extends React.Component {
     this.state = { visible: true };
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps = nextProps => {
     // reset the timer if children are changed
     if (nextProps.children !== this.props.children) {
       this.setTimer();
       this.setState({ visible: true });
     }
-  }
+  };
 
-  componentDidMount() {
-    this.setTimer();
-  }
+  componentDidMount = () => this.setTimer();
 
   setTimer() {
     // clear any existing timer
@@ -35,9 +33,7 @@ export default class Expire extends React.Component {
     );
   }
 
-  componentWillUnmount() {
-    clearTimeout(this._timer);
-  }
+  componentWillUnmount = () => clearTimeout(this._timer);
 
   render() {
     return this.state.visible ? (
