@@ -1,11 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Spring } from "react-spring/renderprops";
 
-export default class Expire extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { visible: true };
-  }
+export default class Expire extends Component {
+  state = { visible: true };
 
   componentWillReceiveProps = nextProps => {
     // reset the timer if children are changed
