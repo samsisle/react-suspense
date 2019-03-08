@@ -10,19 +10,16 @@ const imageSrc = unicode => {
 };
 
 export default function SearchBar(props) {
-  const [search, setSearch] = useState("");
-
   const options = {
     keys: ["label"]
   };
   const fuse = new Fuse(emojis, options);
   const handleSearch = e => {
     const value = e.target.value;
-    setSearch(value);
+    props.setValue(value);
     const results = fuse.search(value);
     props.results(results);
     props.inputValue(value);
-    console.log(results);
   };
   return (
     <div className={styles.container}>
@@ -31,7 +28,7 @@ export default function SearchBar(props) {
         <input
           className={styles.input}
           placeholder="Search for emojis"
-          value={search}
+          value={props.value}
           onChange={handleSearch}
         />
       </div>
