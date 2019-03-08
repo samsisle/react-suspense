@@ -26,11 +26,12 @@ export default function App() {
 
   const copyModal = (emoji, label) => setTest({ emoji, label });
   const redirect = () => <Redirect to="/smileys_people" />;
-  const resultsHandler = results => {
-    setEmojis(results);
-  };
-  const inputHandler = input => {
-    setValue(input);
+  const resultsHandler = results => setEmojis(results);
+  const inputHandler = input => setValue(input);
+  const clear = _ => {
+    setTest(null);
+    setEmojis([]);
+    setValue([]);
   };
 
   return (
@@ -38,13 +39,18 @@ export default function App() {
       <Banner />
       <Portal>
         {test && (
-          <Expire delay={2000}>
+          <Expire delay={2000} setTest={setTest}>
             <Modal emoji={test} />
           </Expire>
         )}
       </Portal>
-      <SearchBar results={resultsHandler} inputValue={inputHandler} />
-      <Tabs />
+      <SearchBar
+        results={resultsHandler}
+        inputValue={inputHandler}
+        value={value}
+        setValue={setValue}
+      />
+      <Tabs clear={clear} />
       <Suspense
         fallback={<div className={styles.loading}>Loading Emojis...</div>}
       >

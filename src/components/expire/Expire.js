@@ -19,6 +19,9 @@ export default class Expire extends Component {
     if (this._timer != null) {
       clearTimeout(this._timer);
     }
+    if (this._timer != null) {
+      clearTimeout(this._timeout);
+    }
 
     // hide after `delay` milliseconds
     this._timer = setTimeout(
@@ -28,9 +31,18 @@ export default class Expire extends Component {
       }.bind(this),
       2000
     );
+    this._timeout = setTimeout(
+      function() {
+        this.props.setTest(null);
+      }.bind(this),
+      2000
+    );
   }
 
-  componentWillUnmount = () => clearTimeout(this._timer);
+  componentWillUnmount = () => {
+    clearTimeout(this._timer);
+    clearTimeout(this._timeout);
+  };
 
   render() {
     return this.state.visible ? (
