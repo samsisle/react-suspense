@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Fuse from "fuse.js";
 
 import { allEmojis as emojis } from "../../__data__/allEmojis";
 import styles from "./searchBar.module.css";
 
 const images = require("../../assets/svgs/1f50d.svg");
-const imageSrc = unicode => {
-  return require("../../assets/svgs/" + unicode + ".svg");
-};
 
 export default function SearchBar(props) {
   const options = {
