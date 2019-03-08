@@ -13,4 +13,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById("twemoji")
 );
-serviceWorker.unregister();
+serviceWorker.register();
