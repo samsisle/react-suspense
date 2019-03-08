@@ -1,13 +1,17 @@
 .banner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  background: #7d5cff;
+  flex-wrap: wrap;
+  /* background: #7d5cff; */
+  background-image: linear-gradient(45deg, #7d5cff 25%, #8b6bff 25%, #8b6bff 50%, #7d5cff 50%, #7d5cff 75%, #8b6bff 75%, #8b6bff 100%);
+  background-size: 60px 60px;
   color: white;
   font-weight: 500;
   height: 65px;
-  padding: 0 5%;
+  padding: 1rem 5%;
   width: 100%;
+  height: 40vh;
 }
 
 .title {
@@ -33,4 +37,10 @@
   position: relative;
   top: 3px;
   width: 1.75rem;
+}
+
+.motto {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }

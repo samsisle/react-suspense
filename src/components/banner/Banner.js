@@ -24,7 +24,7 @@ export default function Banner() {
           alt={array[index].alt}
           onClick={handleIndex}
         />
-        ji
+        jiest
       </h1>
       <a
         className={styles.share}
@@ -34,6 +34,7 @@ export default function Banner() {
       >
         Share on Twitter
       </a>
+      <div className={styles.motto}>#1 place to copy emojis</div>
     </div>
   );
 }
