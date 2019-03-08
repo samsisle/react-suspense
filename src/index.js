@@ -11,6 +11,6 @@ ReactDOM.render(
   <Router>
     <App />
   </Router>,
-  document.getElementById("twemoji")
+  document.getElementById("emojiest")
 );
 serviceWorker.register();
