@@ -9,7 +9,7 @@ const imageSrc = unicode => {
   return require("../../assets/svgs/" + unicode + ".svg");
 };
 
-export default function SearchBar() {
+export default function SearchBar(props) {
   const [search, setSearch] = useState("");
 
   const options = {
@@ -17,11 +17,13 @@ export default function SearchBar() {
   };
   const fuse = new Fuse(emojis, options);
   const handleSearch = e => {
-    setSearch(e.target.value);
-    console.log(fuse.search(search));
+    const value = e.target.value;
+    setSearch(value);
+    const results = fuse.search(value);
+    props.results(results);
+    props.inputValue(value);
+    console.log(results);
   };
-
-  fuse.search("engsh");
   return (
     <div className={styles.container}>
       <div className={styles.inputBox}>

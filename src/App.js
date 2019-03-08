@@ -7,6 +7,7 @@ import { Portal, Modal, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
 import {
+  ResultsContainer,
   SmileysPeople,
   Activity,
   AnimalsNature,
@@ -20,9 +21,17 @@ import styles from "./styles/App.module.css";
 
 export default function App() {
   const [test, setTest] = useState(null);
+  const [emojis, setEmojis] = useState([]);
+  const [value, setValue] = useState("");
 
   const copyModal = (emoji, label) => setTest({ emoji, label });
   const redirect = () => <Redirect to="/smileys_people" />;
+  const resultsHandler = results => {
+    setEmojis(results);
+  };
+  const inputHandler = input => {
+    setValue(input);
+  };
 
   return (
     <div className={styles.test}>
@@ -34,20 +43,30 @@ export default function App() {
           </Expire>
         )}
       </Portal>
-      <SearchBar />
+      <SearchBar results={resultsHandler} inputValue={inputHandler} />
       <Tabs />
       <Suspense
         fallback={<div className={styles.loading}>Loading Emojis...</div>}
       >
         <Context.Provider value={copyModal}>
           <Route exact path="/" render={redirect} />
-          <Route path="/smileys_people" component={SmileysPeople} />
-          <Route path="/activity" component={Activity} />
-          <Route path="/animals_nature" component={AnimalsNature} />
-          <Route path="/food_drink" component={FoodDrink} />
-          <Route path="/objects" component={Objects} />
-          <Route path="/symbols" component={Symbols} />
-          <Route path="/travel_places" component={TravelPlaces} />
+          {emojis.length > 0 && value ? (
+            <ResultsContainer emojis={emojis} />
+          ) : null}
+          <div
+            style={{
+              display: emojis.length > 0 && value ? "none" : "block",
+              width: "100%"
+            }}
+          >
+            <Route path="/smileys_people" component={SmileysPeople} />
+            <Route path="/activity" component={Activity} />
+            <Route path="/animals_nature" component={AnimalsNature} />
+            <Route path="/food_drink" component={FoodDrink} />
+            <Route path="/objects" component={Objects} />
+            <Route path="/symbols" component={Symbols} />
+            <Route path="/travel_places" component={TravelPlaces} />
+          </div>
         </Context.Provider>
       </Suspense>
       <Footer />
