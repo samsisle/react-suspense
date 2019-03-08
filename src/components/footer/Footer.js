@@ -12,12 +12,26 @@ const Footer = _ => {
       <span className={styles.copyright}>&copy; 2019 </span>
       <a
         className={styles.link}
-        href="https://github.com/samsisle/react-suspense"
+        href="https://github.com/samsisle/react-suspense/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img className={styles.icons} src={GitHub} alt="github" />
+      </a>
+      <a
+        className={styles.link}
+        href="https://github.com/catsaremlg/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img className={styles.icons} src={shrimp} alt="catsaremlg" />
+      </a>
+      <a
+        className={styles.link}
+        href="https://github.com/samsisle/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img className={styles.icons} src={avocado} alt="samsisle" />
       </a>
     </footer>
