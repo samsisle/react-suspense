@@ -1,5 +1,8 @@
-import { lazy } from 'react';
+import { lazy } from "react";
 
+export const ResultsContainer = lazy(() =>
+  import("../components/resultsContainer/ResultsContainer")
+);
 export const SmileysPeople = lazy(() =>
   import("../components/smileys_people/SmileysPeople")
 );
