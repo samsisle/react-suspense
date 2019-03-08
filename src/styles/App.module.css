@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	background: rgb(255, 254, 250);
 }
 
 .loading {
