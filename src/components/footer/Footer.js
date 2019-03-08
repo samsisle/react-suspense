@@ -3,6 +3,9 @@ import React from "react";
 import styles from "./footer.module.css";
 import GitHub from "../../assets/icons/GitHub-Mark-32px.png";
 
+const shrimp = require("../../assets/svgs/1f990.svg");
+const avocado = require("../../assets/svgs/1f951.svg");
+
 const Footer = _ => {
   return (
     <footer className={styles.footer}>
@@ -14,6 +17,8 @@ const Footer = _ => {
         rel="noopener noreferrer"
       >
         <img className={styles.icons} src={GitHub} alt="github" />
+        <img className={styles.icons} src={shrimp} alt="catsaremlg" />
+        <img className={styles.icons} src={avocado} alt="samsisle" />
       </a>
     </footer>
   );
