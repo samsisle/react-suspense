@@ -151,9 +151,7 @@ table {
 body {
   font-family: 'Montserrat',
     sans-serif;
-  /* background: rgb(255, 254, 250); */
-  background-image: linear-gradient(45deg, #7d5cff 25%, #8b6bff 25%, #8b6bff 50%, #7d5cff 50%, #7d5cff 75%, #8b6bff 75%, #8b6bff 100%);
-  background-size: 60px 60px;
+  background: rgb(255, 254, 250);
 }
 
 a {
