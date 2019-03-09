@@ -10,7 +10,7 @@ export default function Banner() {
   const [index, setIndex] = useState(uniqueRNG(array.length - 1, 0, null));
 
   const image = require("../../assets/svgs/" + array[index].unicode + ".svg");
-  const handleIndex = _ => setIndex(uniqueRNG(array.length - 1, 0, index));
+  const handleIndex = _ => setIndex(uniqueRNG(array.length, 0, index));
 
   useInterval(_ => handleIndex(index), 5000);
 
