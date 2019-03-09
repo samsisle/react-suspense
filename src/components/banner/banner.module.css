@@ -44,6 +44,11 @@
   font-size: 2rem;
 }
 
+.heart {
+  position: relative;
+  top: 5px;
+}
+
 @media (max-width:340px) {
   .banner {
     justify-content: center;
@@ -52,5 +57,9 @@
   .title {
     width: 100%;
     text-align: center;
+  }
+
+  .motto {
+    font-size: 1.75rem;
   }
 }
