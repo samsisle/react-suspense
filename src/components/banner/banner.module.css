@@ -47,6 +47,7 @@
 .heart {
   position: relative;
   top: 5px;
+  width: 1.75rem;
 }
 
 @media (max-width:340px) {
