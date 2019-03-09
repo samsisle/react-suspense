@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react";
+import React, { useState, Suspense, Fragment } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
@@ -35,47 +35,49 @@ export default function App() {
   };
 
   return (
-    <div className={styles.test}>
-      <Banner />
-      <Portal>
-        {test && (
-          <Expire delay={2000} setTest={setTest}>
-            <Modal emoji={test} />
-          </Expire>
-        )}
-      </Portal>
-      <SearchBar
-        results={resultsHandler}
-        inputValue={inputHandler}
-        value={value}
-        setValue={setValue}
-      />
-      <Tabs clear={clear} />
-      <Suspense
-        fallback={<div className={styles.loading}>Loading Emojis...</div>}
-      >
-        <Context.Provider value={copyModal}>
-          <Route exact path="/" render={redirect} />
-          {emojis.length > 0 && value ? (
-            <ResultsContainer emojis={emojis} />
-          ) : null}
-          <div
-            style={{
-              display: emojis.length > 0 && value ? "none" : "block",
-              width: "100%"
-            }}
-          >
-            <Route path="/smileys_people" component={SmileysPeople} />
-            <Route path="/activity" component={Activity} />
-            <Route path="/animals_nature" component={AnimalsNature} />
-            <Route path="/food_drink" component={FoodDrink} />
-            <Route path="/objects" component={Objects} />
-            <Route path="/symbols" component={Symbols} />
-            <Route path="/travel_places" component={TravelPlaces} />
-          </div>
-        </Context.Provider>
-      </Suspense>
+    <Fragment>
+      <main className={styles.test}>
+        <Banner />
+        <Portal>
+          {test && (
+            <Expire delay={2000} setTest={setTest}>
+              <Modal emoji={test} />
+            </Expire>
+          )}
+        </Portal>
+        <SearchBar
+          results={resultsHandler}
+          inputValue={inputHandler}
+          value={value}
+          setValue={setValue}
+        />
+        <Tabs clear={clear} />
+        <Suspense
+          fallback={<div className={styles.loading}>Loading Emojis...</div>}
+        >
+          <Context.Provider value={copyModal}>
+            <Route exact path="/" render={redirect} />
+            {emojis.length > 0 && value ? (
+              <ResultsContainer emojis={emojis} />
+            ) : null}
+            <div
+              style={{
+                display: emojis.length > 0 && value ? "none" : "block",
+                width: "100%"
+              }}
+            >
+              <Route path="/smileys_people" component={SmileysPeople} />
+              <Route path="/activity" component={Activity} />
+              <Route path="/animals_nature" component={AnimalsNature} />
+              <Route path="/food_drink" component={FoodDrink} />
+              <Route path="/objects" component={Objects} />
+              <Route path="/symbols" component={Symbols} />
+              <Route path="/travel_places" component={TravelPlaces} />
+            </div>
+          </Context.Provider>
+        </Suspense>
+      </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
