@@ -7,4 +7,5 @@
 ### Authors
 
 Joshua Gonzalez ([!@CatsAreMLG](https://github.com/CatsAreMLG])) - [LambdaSchool](https://lambdaschool.com/)
+
 Samuel Ko ([!@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://lambdaschool.com/)
