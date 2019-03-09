@@ -136,32 +136,16 @@ export const symbols = [
   { unicode: "1f522", label: "input symbol for numbers" },
   { unicode: "25b6", label: "black right-pointing triangle" },
   { unicode: "23f8", label: "double vertical bar" },
-  {
-    unicode: "23ef",
-    label: "black right-pointing double triangle with double vertical bar"
-  },
+  { unicode: "23ef", label: "black right-pointing double triangle with double vertical bar" },
   { unicode: "23f9", label: "black square for stop" },
   { unicode: "23fa", label: "black circle for record" },
-  {
-    unicode: "23ed",
-    label: "black right-pointing double triangle with vertical bar"
-  },
-  {
-    unicode: "23ee",
-    label: "black left-pointing double triangle with vertical bar"
-  },
+  { unicode: "23ed", label: "black right-pointing double triangle with vertical bar" },
+  { unicode: "23ee", label: "black left-pointing double triangle with vertical bar" },
   { unicode: "23e9", label: "black right-pointing double triangle" },
   { unicode: "23ea", label: "black left-pointing double triangle" },
   { unicode: "1f500", label: "twisted rightwards arrows" },
-  {
-    unicode: "1f501",
-    label: "clockwise rightwards and leftwards open circle arrows"
-  },
-  {
-    unicode: "1f502",
-    label:
-      "clockwise rightwards and leftwards open circle arrows with circled one overlay"
-  },
+  { unicode: "1f501", label: "clockwise rightwards and leftwards open circle arrows" },
+  { unicode: "1f502", label: "clockwise rightwards and leftwards open circle arrows with circled one overlay" },
   { unicode: "25c0", label: "black left-pointing triangle" },
   { unicode: "1f53c", label: "up-pointing small red triangle" },
   { unicode: "1f53d", label: "down-pointing small red triangle" },
@@ -177,17 +161,11 @@ export const symbols = [
   { unicode: "2196", label: "north west arrow" },
   { unicode: "2195", label: "up down arrow" },
   { unicode: "2194", label: "left right arrow" },
-  {
-    unicode: "1f504",
-    label: "anticlockwise downwards and upwards open circle arrows"
-  },
+  { unicode: "1f504", label: "anticlockwise downwards and upwards open circle arrows" },
   { unicode: "21aa", label: "rightwards arrow with hook" },
   { unicode: "21a9", label: "leftwards arrow with hook" },
   { unicode: "2934", label: "arrow pointing rightwards then curving upwards" },
-  {
-    unicode: "2935",
-    label: "arrow pointing rightwards then curving downwards"
-  },
+  { unicode: "2935", label: "arrow pointing rightwards then curving downwards" },
   { unicode: "2139", label: "information source" },
   { unicode: "1f524", label: "input symbol for latin letters" },
   { unicode: "1f521", label: "input symbol for latin small letters" },
@@ -198,10 +176,7 @@ export const symbols = [
   { unicode: "3030", label: "wavy dash" },
   { unicode: "27b0", label: "curly loop" },
   { unicode: "2714", label: "heavy check mark" },
-  {
-    unicode: "1f503",
-    label: "clockwise downwards and upwards open circle arrows"
-  },
+  { unicode: "1f503", label: "clockwise downwards and upwards open circle arrows" },
   { unicode: "2795", label: "heavy plus sign" },
   { unicode: "2796", label: "heavy minus sign" },
   { unicode: "2797", label: "heavy division sign" },
@@ -213,10 +188,7 @@ export const symbols = [
   { unicode: "2122", label: "trade mark sign" },
   { unicode: "1f51a", label: "end with leftwards arrow above" },
   { unicode: "1f519", label: "back with leftwards arrow above" },
-  {
-    unicode: "1f51b",
-    label: "on with exclamation mark with left right arrow abo"
-  },
+  { unicode: "1f51b", label: "on with exclamation mark with left right arrow above" },
   { unicode: "1f51d", label: "top with upwards arrow above" },
   { unicode: "1f51c", label: "soon with rightwards arrow above" },
   { unicode: "2611", label: "ballot box with check" },
