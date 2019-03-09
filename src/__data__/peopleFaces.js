@@ -6,10 +6,7 @@ export const peopleFaces = [
   { unicode: "1f603", label: "smiling face with open mouth" },
   { unicode: "1f604", label: "smiling face with open mouth and smiling eyes" },
   { unicode: "1f605", label: "smiling face with open mouth and cold sweat" },
-  {
-    unicode: "1f606",
-    label: "smiling face with open mouth and tightly-closed eyes"
-  },
+  { unicode: "1f606",label: "smiling face with open mouth and tightly-closed eyes" },
   { unicode: "1f607", label: "smiling face with halo" },
   { unicode: "1f609", label: "winking face" },
   { unicode: "1f60a", label: "smiling face with smiling eyes" },
@@ -23,10 +20,7 @@ export const peopleFaces = [
   { unicode: "1f619", label: "kissing face with smiling eyes" },
   { unicode: "1f61a", label: "kissing face with closed eyes" },
   { unicode: "1f61c", label: "face with stuck-out tongue and winking eye" },
-  {
-    unicode: "1f61d",
-    label: "face with stuck-out tongue and tightly-closed eyes"
-  },
+  { unicode: "1f61d", label: "face with stuck-out tongue and tightly-closed eyes" },
   { unicode: "1f61b", label: "face with stuck-out tongue" },
   { unicode: "1f60e", label: "smiling face with sunglasses" },
   { unicode: "1f60f", label: "smirking face" },
@@ -102,10 +96,7 @@ export const peopleFaces = [
   { unicode: "1f449", label: "white right pointing backhand index" },
   { unicode: "1f595", label: "reversed hand with middle finger extended" },
   { unicode: "1f590", label: "raised hand with fingers splayed" },
-  {
-    unicode: "1f596",
-    label: "raised hand with part between middle and ring fingers"
-  },
+  { unicode: "1f596", label: "raised hand with part between middle and ring fingers" },
   { unicode: "270d", label: "writing hand" },
   { unicode: "1f485", label: "nail polish" },
   { unicode: "1f444", label: "mouth" },
