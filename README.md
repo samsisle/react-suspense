@@ -6,5 +6,5 @@
 
 ### Authors
 
-Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG])) - [LambdaSchool](https://lambdaschool.com/)<br>
+Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG)) - [LambdaSchool](https://lambdaschool.com/)<br>
 Samuel Ko ([@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://lambdaschool.com/)
