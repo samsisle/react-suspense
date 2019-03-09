@@ -2,7 +2,7 @@ import React, { useState, Suspense, Fragment } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import Banner from "./components/banner/Banner";
-import Expire from "./components/expire/Expire";
+import Expire from "./services/Expire";
 import { Portal, Modal, Context } from "./components/modal";
 import SearchBar from "./components/searchBar/SearchBar";
 import Tabs from "./components/tabs/Tabs";
