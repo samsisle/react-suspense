@@ -1,12 +1,12 @@
 import React from "react";
 
-import styles from "./footer.module.css";
 import GitHub from "../../assets/icons/GitHub-Mark-32px.png";
+import styles from "./footer.module.css";
 
 const shrimp = require("../../assets/svgs/1f990.svg");
 const avocado = require("../../assets/svgs/1f951.svg");
 
-const Footer = _ => {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <span className={styles.copyright}>&copy; 2019 </span>
@@ -36,6 +36,4 @@ const Footer = _ => {
       </a>
     </footer>
   );
-};
-
-export default Footer;
+}
