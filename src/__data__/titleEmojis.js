@@ -1,4 +1,4 @@
-const titleEmojis = [
+export const titleEmojis = [
   { unicode: "1f61c", alt: "face with stuck-out tongue and winking eye" },
   { unicode: "1f602", alt: "face with tears of joy" },
   { unicode: "1f607", alt: "smiling face with halo" },
@@ -19,4 +19,3 @@ const titleEmojis = [
   { unicode: "1f4a3", alt: "bomb" },
   { unicode: "1f497", alt: "growing heart" }
 ];
-export default titleEmojis;
