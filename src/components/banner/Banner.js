@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import titleEmojis from "../../__data__/titleEmojis";
+import { titleEmojis } from "../../__data__/titleEmojis";
 import uniqueRNG from "../../services/uniqueRNG";
 import useInterval from "../../services/useInterval";
 import styles from "./banner.module.css";
