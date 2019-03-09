@@ -5,18 +5,9 @@ export const allEmojis = [
   { unicode: "1f601", label: "grinning face with smiling eyes" },
   { unicode: "1f602", label: "face with tears of joy" },
   { unicode: "1f603", label: "smiling face with open mouth" },
-  {
-    unicode: "1f604",
-    label: "smiling face with open mouth and smiling eyes"
-  },
-  {
-    unicode: "1f605",
-    label: "smiling face with open mouth and cold sweat"
-  },
-  {
-    unicode: "1f606",
-    label: "smiling face with open mouth and tightly-closed eyes"
-  },
+  { unicode: "1f604", label: "smiling face with open mouth and smiling eyes" },
+  { unicode: "1f605", label: "smiling face with open mouth and cold sweat" },
+  { unicode: "1f606",label: "smiling face with open mouth and tightly-closed eyes" },
   { unicode: "1f607", label: "smiling face with halo" },
   { unicode: "1f609", label: "winking face" },
   { unicode: "1f60a", label: "smiling face with smiling eyes" },
@@ -24,22 +15,13 @@ export const allEmojis = [
   { unicode: "263a", label: "white smiling face" },
   { unicode: "1f60b", label: "face savouring delicious food" },
   { unicode: "1f60c", label: "relieved face" },
-  {
-    unicode: "1f60d",
-    label: "smiling face with heart-shaped eyes"
-  },
+  { unicode: "1f60d", label: "smiling face with heart-shaped eyes" },
   { unicode: "1f618", label: "face throwing a kiss" },
   { unicode: "1f617", label: "kissing face" },
   { unicode: "1f619", label: "kissing face with smiling eyes" },
   { unicode: "1f61a", label: "kissing face with closed eyes" },
-  {
-    unicode: "1f61c",
-    label: "face with stuck-out tongue and winking eye"
-  },
-  {
-    unicode: "1f61d",
-    label: "face with stuck-out tongue and tightly-closed eyes"
-  },
+  { unicode: "1f61c", label: "face with stuck-out tongue and winking eye" },
+  { unicode: "1f61d", label: "face with stuck-out tongue and tightly-closed eyes" },
   { unicode: "1f61b", label: "face with stuck-out tongue" },
   { unicode: "1f60e", label: "smiling face with sunglasses" },
   { unicode: "1f60f", label: "smirking face" },
@@ -64,10 +46,7 @@ export const allEmojis = [
   { unicode: "1f62e", label: "face with open mouth" },
   { unicode: "1f631", label: "face screaming in fear" },
   { unicode: "1f628", label: "fearful face" },
-  {
-    unicode: "1f630",
-    label: "face with open mouth and cold sweat"
-  },
+  { unicode: "1f630", label: "face with open mouth and cold sweat" },
   { unicode: "1f62f", label: "hushed face" },
   { unicode: "1f626", label: "frowning face with open mouth" },
   { unicode: "1f627", label: "anguished face" },
@@ -90,27 +69,15 @@ export const allEmojis = [
   { unicode: "1f47b", label: "ghost" },
   { unicode: "1f47d", label: "extraterrestrial alien" },
   { unicode: "1f63a", label: "smiling cat face with open mouth" },
-  {
-    unicode: "1f638",
-    label: "grinning cat face with smiling eyes"
-  },
+  { unicode: "1f638", label: "grinning cat face with smiling eyes" },
   { unicode: "1f639", label: "cat face with tears of joy" },
-  {
-    unicode: "1f63b",
-    label: "smiling cat face with heart-shaped eyes"
-  },
+  { unicode: "1f63b", label: "smiling cat face with heart-shaped eyes" },
   { unicode: "1f63c", label: "cat face with wry smile" },
-  {
-    unicode: "1f63d",
-    label: "kissing cat face with closed eyes"
-  },
+  { unicode: "1f63d", label: "kissing cat face with closed eyes" },
   { unicode: "1f640", label: "weary cat face" },
   { unicode: "1f63f", label: "crying cat face" },
   { unicode: "1f63e", label: "pouting cat face" },
-  {
-    unicode: "1f64c",
-    label: "person raising both hands in celebration"
-  },
+  { unicode: "1f64c", label: "person raising both hands in celebration" },
   { unicode: "1f44f", label: "clapping hands sign" },
   { unicode: "1f44b", label: "waving hand sign" },
   { unicode: "1f44d", label: "thumbs up sign" },
@@ -125,27 +92,12 @@ export const allEmojis = [
   { unicode: "1f64f", label: "person with folded hands" },
   { unicode: "261d", label: "white up pointing index" },
   { unicode: "1f446", label: "white up pointing backhand index" },
-  {
-    unicode: "1f447",
-    label: "white down pointing backhand index"
-  },
-  {
-    unicode: "1f448",
-    label: "white left pointing backhand index"
-  },
-  {
-    unicode: "1f449",
-    label: "white right pointing backhand index"
-  },
-  {
-    unicode: "1f595",
-    label: "reversed hand with middle finger extended"
-  },
+  { unicode: "1f447", label: "white down pointing backhand index" },
+  { unicode: "1f448", label: "white left pointing backhand index" },
+  { unicode: "1f449", label: "white right pointing backhand index" },
+  { unicode: "1f595", label: "reversed hand with middle finger extended" },
   { unicode: "1f590", label: "raised hand with fingers splayed" },
-  {
-    unicode: "1f596",
-    label: "raised hand with part between middle and ring fingers"
-  },
+  { unicode: "1f596", label: "raised hand with part between middle and ring fingers" },
   { unicode: "270d", label: "writing hand" },
   { unicode: "1f485", label: "nail polish" },
   { unicode: "1f444", label: "mouth" },
@@ -520,10 +472,7 @@ export const allEmojis = [
   { unicode: "1f68b", label: "tram car" },
   { unicode: "1f69d", label: "monorail" },
   { unicode: "1f684", label: "high-speed train" },
-  {
-    unicode: "1f685",
-    label: "high-speed train with bullet nose"
-  },
+  { unicode: "1f685", label: "high-speed train with bullet nose" },
   { unicode: "1f688", label: "light rail" },
   { unicode: "1f69e", label: "mountain railway" },
   { unicode: "1f682", label: "steam locomotive" },
@@ -614,10 +563,7 @@ export const allEmojis = [
   //objectsMedia
   { unicode: "231a", label: "watch" },
   { unicode: "1f4f1", label: "mobile phone" },
-  {
-    unicode: "1f4f2",
-    label: "mobile phone with rightwards arrow at left"
-  },
+  { unicode: "1f4f2", label: "mobile phone with rightwards arrow at left" },
   { unicode: "1f4bb", label: "personal computer" },
   { unicode: "2328", label: "keyboard" },
   { unicode: "1f5a5", label: "desktop computer" },
@@ -726,10 +672,7 @@ export const allEmojis = [
   { unicode: "1f38c", label: "crossed flags" },
   { unicode: "1f3ee", label: "izakaya lantern" },
   { unicode: "2709", label: "envelope" },
-  {
-    unicode: "1f4e9",
-    label: "envelope with downwards arrow above"
-  },
+  { unicode: "1f4e9", label: "envelope with downwards arrow above" },
   { unicode: "1f4e8", label: "incoming envelope" },
   { unicode: "1f4e7", label: "e-mail symbol" },
   { unicode: "1f48c", label: "love letter" },
@@ -803,10 +746,7 @@ export const allEmojis = [
   { unicode: "1f499", label: "blue heart" },
   { unicode: "1f49c", label: "purple heart" },
   { unicode: "1f494", label: "broken heart" },
-  {
-    unicode: "2763",
-    label: "heavy heart exclamation mark ornament"
-  },
+  { unicode: "2763", label: "heavy heart exclamation mark ornament" },
   { unicode: "1f495", label: "two hearts" },
   { unicode: "1f49e", label: "revolving hearts" },
   { unicode: "1f493", label: "beating heart" },
@@ -841,38 +781,17 @@ export const allEmojis = [
   { unicode: "2653", label: "pisces" },
   { unicode: "1f194", label: "squared id" },
   { unicode: "269b", label: "atom symbol" },
-  {
-    unicode: "1f233",
-    label: "squared cjk unified ideograph-7a7a"
-  },
-  {
-    unicode: "1f239",
-    label: "squared cjk unified ideograph-5272"
-  },
+  { unicode: "1f233", label: "squared cjk unified ideograph-7a7a" },
+  { unicode: "1f239", label: "squared cjk unified ideograph-5272" },
   { unicode: "2622", label: "radioactive sign" },
   { unicode: "2623", label: "biohazard sign" },
   { unicode: "1f4f4", label: "mobile phone off" },
   { unicode: "1f4f3", label: "vibration mode" },
-  {
-    unicode: "1f236",
-    label: "squared cjk unified ideograph-6709"
-  },
-  {
-    unicode: "1f21a",
-    label: "squared cjk unified ideograph-7121"
-  },
-  {
-    unicode: "1f238",
-    label: "squared cjk unified ideograph-7533"
-  },
-  {
-    unicode: "1f23a",
-    label: "squared cjk unified ideograph-55b6"
-  },
-  {
-    unicode: "1f237",
-    label: "squared cjk unified ideograph-6708"
-  },
+  { unicode: "1f236", label: "squared cjk unified ideograph-6709" },
+  { unicode: "1f21a", label: "squared cjk unified ideograph-7121" },
+  { unicode: "1f238", label: "squared cjk unified ideograph-7533" },
+  { unicode: "1f23a", label: "squared cjk unified ideograph-55b6" },
+  { unicode: "1f237", label: "squared cjk unified ideograph-6708" },
   { unicode: "2734", label: "eight pointed black star" },
   { unicode: "1f19a", label: "squared vs" },
   { unicode: "1f251", label: "circled ideograph accept" },
@@ -880,32 +799,14 @@ export const allEmojis = [
   { unicode: "1f250", label: "circled ideograph advantage" },
   { unicode: "3299", label: "circled ideograph secret" },
   { unicode: "3297", label: "circled ideograph congratulation" },
-  {
-    unicode: "1f234",
-    label: "squared cjk unified ideograph-5408"
-  },
-  {
-    unicode: "1f235",
-    label: "squared cjk unified ideograph-6e80"
-  },
-  {
-    unicode: "1f232",
-    label: "squared cjk unified ideograph-7981"
-  },
-  {
-    unicode: "1f170",
-    label: "negative squared latin capital letter a"
-  },
-  {
-    unicode: "1f171",
-    label: "negative squared latin capital letter b"
-  },
+  { unicode: "1f234", label: "squared cjk unified ideograph-5408" },
+  { unicode: "1f235", label: "squared cjk unified ideograph-6e80" },
+  { unicode: "1f232", label: "squared cjk unified ideograph-7981" },
+  { unicode: "1f170", label: "negative squared latin capital letter a" },
+  { unicode: "1f171", label: "negative squared latin capital letter b" },
   { unicode: "1f18e", label: "negative squared ab" },
   { unicode: "1f191", label: "squared cl" },
-  {
-    unicode: "1f17e",
-    label: "negative squared latin capital letter o"
-  },
+  { unicode: "1f17e", label: "negative squared latin capital letter o" },
   { unicode: "1f198", label: "squared sos" },
   { unicode: "26d4", label: "no entry" },
   { unicode: "1f4db", label: "name badge" },
@@ -936,14 +837,8 @@ export const allEmojis = [
   { unicode: "1f6b8", label: "children crossing" },
   { unicode: "1f530", label: "japanese symbol for beginner" },
   { unicode: "267b", label: "black universal recycling symbol" },
-  {
-    unicode: "1f22f",
-    label: "squared cjk unified ideograph-6307"
-  },
-  {
-    unicode: "1f4b9",
-    label: "chart with upwards trend and yen sign"
-  },
+  { unicode: "1f22f", label: "squared cjk unified ideograph-6307" },
+  { unicode: "1f4b9", label: "chart with upwards trend and yen sign" },
   { unicode: "2747", label: "sparkle" },
   { unicode: "2733", label: "eight spoked asterisk" },
   { unicode: "274e", label: "negative squared cross mark" },
@@ -962,10 +857,7 @@ export const allEmojis = [
   { unicode: "267f", label: "wheelchair symbol" },
   { unicode: "1f6ad", label: "no smoking symbol" },
   { unicode: "1f6be", label: "water closet" },
-  {
-    unicode: "1f17f",
-    label: "negative squared latin capital letter p"
-  },
+  { unicode: "1f17f", label: "negative squared latin capital letter p" },
   { unicode: "1f6b0", label: "potable water symbol" },
   { unicode: "1f6b9", label: "mens symbol" },
   { unicode: "1f6ba", label: "womens symbol" },
@@ -985,46 +877,21 @@ export const allEmojis = [
   { unicode: "1f522", label: "input symbol for numbers" },
   { unicode: "25b6", label: "black right-pointing triangle" },
   { unicode: "23f8", label: "double vertical bar" },
-  {
-    unicode: "23ef",
-    label: "black right-pointing double triangle with double vertical bar"
-  },
+  { unicode: "23ef", label: "black right-pointing double triangle with double vertical bar" },
   { unicode: "23f9", label: "black square for stop" },
   { unicode: "23fa", label: "black circle for record" },
-  {
-    unicode: "23ed",
-    label: "black right-pointing double triangle with vertical bar"
-  },
-  {
-    unicode: "23ee",
-    label: "black left-pointing double triangle with vertical bar"
-  },
-  {
-    unicode: "23e9",
-    label: "black right-pointing double triangle"
-  },
-  {
-    unicode: "23ea",
-    label: "black left-pointing double triangle"
-  },
+  { unicode: "23ed", label: "black right-pointing double triangle with vertical bar" },
+  { unicode: "23ee", label: "black left-pointing double triangle with vertical bar" },
+  { unicode: "23e9", label: "black right-pointing double triangle" },
+  { unicode: "23ea", label: "black left-pointing double triangle" },
   { unicode: "1f500", label: "twisted rightwards arrows" },
-  {
-    unicode: "1f501",
-    label: "clockwise rightwards and leftwards open circle arrows"
-  },
-  {
-    unicode: "1f502",
-    label:
-      "clockwise rightwards and leftwards open circle arrows with circled one overlay"
-  },
+  { unicode: "1f501", label: "clockwise rightwards and leftwards open circle arrows" },
+  { unicode: "1f502", label: "clockwise rightwards and leftwards open circle arrows with circled one overlay" },
   { unicode: "25c0", label: "black left-pointing triangle" },
   { unicode: "1f53c", label: "up-pointing small red triangle" },
   { unicode: "1f53d", label: "down-pointing small red triangle" },
   { unicode: "23eb", label: "black up-pointing double triangle" },
-  {
-    unicode: "23ec",
-    label: "black down-pointing double triangle"
-  },
+  { unicode: "23ec", label: "black down-pointing double triangle" },
   { unicode: "27a1", label: "black rightwards arrow" },
   { unicode: "2b05", label: "leftwards black arrow" },
   { unicode: "2b06", label: "upwards black arrow" },
@@ -1035,40 +902,22 @@ export const allEmojis = [
   { unicode: "2196", label: "north west arrow" },
   { unicode: "2195", label: "up down arrow" },
   { unicode: "2194", label: "left right arrow" },
-  {
-    unicode: "1f504",
-    label: "anticlockwise downwards and upwards open circle arrows"
-  },
+  { unicode: "1f504", label: "anticlockwise downwards and upwards open circle arrows" },
   { unicode: "21aa", label: "rightwards arrow with hook" },
   { unicode: "21a9", label: "leftwards arrow with hook" },
-  {
-    unicode: "2934",
-    label: "arrow pointing rightwards then curving upwards"
-  },
-  {
-    unicode: "2935",
-    label: "arrow pointing rightwards then curving downwards"
-  },
+  { unicode: "2934", label: "arrow pointing rightwards then curving upwards" },
+  { unicode: "2935", label: "arrow pointing rightwards then curving downwards" },
   { unicode: "2139", label: "information source" },
   { unicode: "1f524", label: "input symbol for latin letters" },
-  {
-    unicode: "1f521",
-    label: "input symbol for latin small letters"
-  },
-  {
-    unicode: "1f520",
-    label: "input symbol for latin capital letters"
-  },
+  { unicode: "1f521", label: "input symbol for latin small letters" },
+  { unicode: "1f520", label: "input symbol for latin capital letters" },
   { unicode: "1f523", label: "input symbol for symbols" },
   { unicode: "1f3b5", label: "musical note" },
   { unicode: "1f3b6", label: "multiple musical notes" },
   { unicode: "3030", label: "wavy dash" },
   { unicode: "27b0", label: "curly loop" },
   { unicode: "2714", label: "heavy check mark" },
-  {
-    unicode: "1f503",
-    label: "clockwise downwards and upwards open circle arrows"
-  },
+  { unicode: "1f503", label: "clockwise downwards and upwards open circle arrows" },
   { unicode: "2795", label: "heavy plus sign" },
   { unicode: "2796", label: "heavy minus sign" },
   { unicode: "2797", label: "heavy division sign" },
@@ -1080,10 +929,7 @@ export const allEmojis = [
   { unicode: "2122", label: "trade mark sign" },
   { unicode: "1f51a", label: "end with leftwards arrow above" },
   { unicode: "1f519", label: "back with leftwards arrow above" },
-  {
-    unicode: "1f51b",
-    label: "on with exclamation mark with left right arrow abo"
-  },
+  { unicode: "1f51b", label: "on with exclamation mark with left right arrow above" },
   { unicode: "1f51d", label: "top with upwards arrow above" },
   { unicode: "1f51c", label: "soon with rightwards arrow above" },
   { unicode: "2611", label: "ballot box with check" },
