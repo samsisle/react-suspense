@@ -3,9 +3,8 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App";
-import * as serviceWorker from "./services/serviceWorker";
 import "typeface-montserrat";
-import "./styles/reset.css";
+import "./styles/index.css";
 
 ReactDOM.render(
   <Router>
@@ -13,4 +12,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById("emojiest")
 );
-serviceWorker.unregister();
