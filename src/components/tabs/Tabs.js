@@ -5,9 +5,9 @@ import { images } from "../../__data__/tabImages";
 import { tabs } from "../../__data__/tabs";
 import styles from "./tabs.module.css";
 
-export default function Tabs(props) {
+export default function Tabs({ clear }) {
   return (
-    <div className={styles.outer} onClick={props.clear}>
+    <div className={styles.outer} onClick={clear}>
       <div className={styles.container}>
         {tabs.map((tab, i) => {
           return (
