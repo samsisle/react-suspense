@@ -4,7 +4,7 @@ import Fuse from "fuse.js";
 import { allEmojis as emojis } from "../../__data__/allEmojis";
 import styles from "./searchBar.module.css";
 
-const images = require("../../assets/svgs/1f50d.svg");
+const magnifyingGlass = require("../../assets/svgs/1f50d.svg");
 
 export default function SearchBar(props) {
   const options = { keys: ["label"] };
@@ -17,11 +17,11 @@ export default function SearchBar(props) {
     props.results(results);
     props.inputValue(value);
   };
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.inputBox}>
-        <img className={styles.searchIcon} src={images} alt="search icon" />
+        <img className={styles.searchIcon} src={magnifyingGlass} alt="search icon" />
         <input
           className={styles.input}
           placeholder="Search for emojis"
