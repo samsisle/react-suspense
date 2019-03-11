@@ -4,7 +4,7 @@
 
 **emojiest** is a simple source for all your favorite emojis.
 
-### ![memo](https://abs.twimg.com/emoji/v2/svg/1f4dd.svg) Authors & License
+### ![memo](https://abs.twimg.com/emoji/v2/svg/1f4dd.svg | width=18) Authors & License
 
 Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG)) - [LambdaSchool](https://lambdaschool.com/)<br>
 Samuel Ko ([@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://lambdaschool.com/)
