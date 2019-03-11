@@ -7,10 +7,9 @@ import styles from "./searchBar.module.css";
 const images = require("../../assets/svgs/1f50d.svg");
 
 export default function SearchBar(props) {
-  const options = {
-    keys: ["label"]
-  };
+  const options = { keys: ["label"] };
   const fuse = new Fuse(emojis, options);
+
   const handleSearch = e => {
     const value = e.target.value;
     props.setValue(value);
@@ -18,6 +17,7 @@ export default function SearchBar(props) {
     props.results(results);
     props.inputValue(value);
   };
+  
   return (
     <div className={styles.container}>
       <div className={styles.inputBox}>
