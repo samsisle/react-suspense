@@ -4,7 +4,7 @@
 
 **emojiest** is a simple source for all your favorite emojis. Artwork by ![Twemoji](https://twemoji.twitter.com/).
 
-### :memo: Authors & :copyright: Licensing
+### Authors & Licensing
 
 Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG)) - [LambdaSchool](https://lambdaschool.com/)<br>
 Samuel Ko ([@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://lambdaschool.com/)
