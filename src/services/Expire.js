@@ -45,15 +45,17 @@ export default class Expire extends Component {
   };
 
   render() {
-    return this.state.visible ? (
-      <Spring
-        from={{ opacity: 1 }}
-        to={{ opacity: 0 }}
-        reset={true}
-        config={{ delay: 1500, duration: 200 }}
-      >
-        {props => <div style={props}>{this.props.children}</div>}
-      </Spring>
-    ) : null;
+    return (
+      this.state.visible && (
+        <Spring
+          from={{ opacity: 1 }}
+          to={{ opacity: 0 }}
+          reset={true}
+          config={{ delay: 1500, duration: 200 }}
+        >
+          {props => <div style={props}>{this.props.children}</div>}
+        </Spring>
+      )
+    );
   }
 }
