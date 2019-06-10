@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Spring } from "react-spring/renderprops";
+import { Spring } from "react-spring";
 
 export default class Expire extends Component {
   state = { visible: true };
