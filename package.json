@@ -4,11 +4,11 @@
   "description": "emojiest is a simple source for all your favorite emojis.",
   "dependencies": {
     "fuse.js": "^3.4.5",
-    "react": "^16.8.6",
+    "react": "^16.10.2",
     "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
     "react-spring": "^9.0.0-beta.11",
     "typeface-montserrat": "^0.0.54"
   },
