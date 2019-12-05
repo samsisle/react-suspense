@@ -1,6 +1,6 @@
 [![emojiest](./src/assets/images/emojis.png)](https://emojiest.now.sh)
 
-**emojiest** is a simple source for all your favorite emojis.
+###### emojiest is a simple source for all your favorite emojis.
 
 Copy your favorite emojis with ease. Artwork by [Twemoji](https://twemoji.twitter.com/).
 
