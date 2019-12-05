@@ -1,8 +1,10 @@
 [![emojiest](./src/assets/images/emojis.png)](https://emojiest.now.sh)
 
-**emojiest** is a simple source for all your favorite emojis. Copy your favorite emojis with ease. Artwork by [Twemoji](https://twemoji.twitter.com/).
+**emojiest** is a simple source for all your favorite emojis.
 
-### Authors & Licensing
+Copy your favorite emojis with ease. Artwork by [Twemoji](https://twemoji.twitter.com/).
+
+## Authors & Licensing
 
 Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG)) - [LambdaSchool](https://lambdaschool.com/)<br>
 Samuel Ko ([@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://lambdaschool.com/)
