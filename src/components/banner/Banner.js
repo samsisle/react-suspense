@@ -29,7 +29,7 @@ export default function Banner() {
       </h1>
       <a
         className={styles.share}
-        href="https://twitter.com/intent/tweet?text=feeling%20cozy%20and%20Emoji%20https%3A%2F%2Femojiest.netlify.com"
+        href="https://twitter.com/intent/tweet?text=feeling%20cozy%20and%20Emoji%20https%3A%2F%2Femojiest.now.sh"
         target="_blank"
         rel="noopener noreferrer"
       >
