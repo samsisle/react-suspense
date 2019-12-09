@@ -4,7 +4,13 @@
 
 **emojiest** is a simple source for all your favorite emojis. Copy your favorite emojis with ease.
 
-Artwork by [Twemoji](https://twemoji.twitter.com/).
+## Installation
+
+```bash
+$ git clone https://github.com/samsisle/emojiest.git
+$ cd emojiest
+$ yarn && yarn start
+```
 
 ## Authors & Licensing
 
@@ -13,3 +19,5 @@ Samuel Ko ([@samsisle](https://github.com/samsisle)) - [LambdaSchool](https://la
 
 Code licensed under the MIT License: [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)<br>
 Graphics licensed under CC BY 4.0: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+
+Artwork by [Twemoji](https://twemoji.twitter.com/).
