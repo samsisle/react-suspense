@@ -16,7 +16,7 @@ import * as serviceWorker from './lib/serviceWorker';
 import './css/index.css';
 
 // Opting into Strict Mode & Concurrent Mode:
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('emojiest')).render(
   <StrictMode>
     <App />
   </StrictMode>
