@@ -1,5 +1,3 @@
-[![emojiest](./src/assets/images/emojis.png)](https://emojiest.now.sh)
-
 ###### Demo: [https://emojiest.now.sh](https://emojiest.now.sh)
 
 **emojiest** is a simple source for all your favorite emojis. Copy your favorite emojis with ease.
