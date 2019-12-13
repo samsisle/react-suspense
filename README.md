@@ -1,4 +1,4 @@
-[![emojiest](./src/assets/images/emojis.png)](https://emojiest.now.sh)
+[![emojiest](https://raw.githubusercontent.com/samsisle/emojiest/old/src/assets/images/emojis.png)](https://emojiest.now.sh)
 
 ###### Demo: [https://emojiest.now.sh](https://emojiest.now.sh)
 
