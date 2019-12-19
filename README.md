@@ -12,6 +12,12 @@ $ cd emojiest
 $ yarn && yarn start
 ```
 
+Deploy this project using [ZEIT Now](https://zeit.co/now):
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/samsisle/emojiest)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Authors & Licensing
 
 Joshua Gonzalez ([@CatsAreMLG](https://github.com/CatsAreMLG)) - [LambdaSchool](https://lambdaschool.com/)<br>
