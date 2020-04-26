@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "emojiest is a simple source for all your favorite emojis.",
   "dependencies": {
-    "fuse.js": "^3.4.6",
+    "fuse.js": "^5.2.3",
     "react": "^16.13.0",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.0",
