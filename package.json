@@ -29,6 +29,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "source-map-explorer": "^2.3.1"
+    "source-map-explorer": "^2.4.2"
   }
 }
