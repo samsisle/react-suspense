@@ -1,0 +1,66 @@
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: linear-gradient(45deg, #7d5cff 25%, #8b6bff 25%, #8b6bff 50%, #7d5cff 50%, #7d5cff 75%, #8b6bff 75%, #8b6bff 100%);
+  background-size: 60px 60px;
+  color: white;
+  font-weight: 500;
+  height: 65px;
+  padding: 1rem 5%;
+  width: 100%;
+  height: 40vh;
+}
+
+.title {
+  cursor: pointer;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.share {
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10.5px 15px;
+}
+
+.share:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.titleEmoji {
+  margin: 0 2px;
+  position: relative;
+  top: 3px;
+  width: 1.75rem;
+}
+
+.motto {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.heart {
+  position: relative;
+  top: 5px;
+  width: 1.75rem;
+}
+
+@media (max-width:340px) {
+  .banner {
+    justify-content: center;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .motto {
+    font-size: 1.75rem;
+  }
+}

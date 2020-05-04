@@ -1,0 +1,34 @@
+{
+  "name": "emojiest",
+  "version": "1.0.0",
+  "description": "emojiest is a simple source for all your favorite emojis.",
+  "dependencies": {
+    "fuse.js": "^3.4.6",
+    "react": "^16.13.0",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-spring": "^8.0.27",
+    "typeface-montserrat": "^0.0.75"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "source-map-explorer": "^2.3.1"
+  }
+}

@@ -1,0 +1,6 @@
+.vscode
+node_modules
+.prettierignore
+.prettierrc
+README.md
+yarn.lock
